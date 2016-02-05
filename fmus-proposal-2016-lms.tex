@@ -3,6 +3,7 @@
 \usepackage[colorlinks=true,allcolors=blue]{hyperref}
 \usepackage{booktabs}
 \usepackage{framed}
+\usepackage{pdfpages}
 
 \title{Taylor University\\
   Faculty Mentored Undergraduate\\
@@ -35,7 +36,10 @@
 \begin{document}
 
 \maketitle
+
+\setcounter{tocdepth}{2}
 \tableofcontents
+\newpage
 
 \section{Participants}
 \label{sec:participants}
@@ -51,9 +55,13 @@ The co-principal investigators on the project are:
 \end{itemize}
 Students involved in the project are:
 \begin{itemize}
-\item TBD
-\item TBD
+\item Bauson, Keith
+\item Hall, Matt
+\item Josten, Luke
+\item Stamper, Abram
 \end{itemize}
+Refer to appendix~\ref{sec:student-applications}
+for the program applications from each student.
 
 % Please type or print clearly your answer to each of the questions
 % below. Answers may be provided on a separate sheet: if so, please retype the
@@ -481,7 +489,7 @@ An agile approach to software development emphasizes
 face-to-face communication,
 flexible planning,
 incremental development,
-and direct collaboration through ``pair programming'' in which two developers
+and periodic collaboration through ``pair programming'' in which two developers
 (in our case, a professor and a student)
 who work together at the same workstation
 to design, develop, and validate new features.
@@ -514,11 +522,15 @@ two faculty members
 and two students, as follows.
 
 \begin{center}
-  \begin{tabular}{rlrr} \toprule
-    Qty & Description    & Unit    & Total    \\ \midrule
+  \begin{tabular}{rlrr}
+    \toprule
+    Qty & Description    & Unit    & Total    \\
+    \midrule
     2   & Faculty salary & \$3,200 & \$6,400  \\
-    2   & Student salary & 3,200   & 6,400    \\ \midrule
-        & Total          &         & \$12,800 \\ \bottomrule
+    4   & Student salary & 3,200   & 12,800   \\
+    \midrule
+        & Total          &         & \$19,200 \\
+    \bottomrule
   \end{tabular}
 \end{center}
 
@@ -551,6 +563,31 @@ Mr.\ Nate White,
 Dr.\ Stefan Brandle, or
 Dr.\ Jonathan Geisler
 in regular consultation with the faculty members.
+
+\appendix
+
+\section{Student Applications}
+\label{sec:student-applications}
+
+Attached, please find applications from the following students.
+
+\begin{center}
+  \begin{tabular}{llll}
+    \toprule
+    Last    & First & Class     & Major            \\
+    \midrule
+    Bauson  & Keith & Senior    & Computer Science \\
+    Hall    & Matt  & Senior    & Computer Science \\
+    Josten  & Luke  & Sophomore & Computer Science \\
+    Stamper & Abram & Sophomore & Computer Science \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+\includepdf[pages=-]{Students/Bauson/Bauson-Application}
+\includepdf[pages=-]{Students/Hall/Hall-Application}
+\includepdf[pages=-]{Students/Josten/Josten-Application}
+\includepdf[pages=-]{Students/Stamper/Stamper-Application}
 
 \end{document}
 

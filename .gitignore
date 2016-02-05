@@ -1,6 +1,8 @@
-/auto/fmus-proposal-2016-lms.el
+/auto
 *.aux
 *.toc
 *.pdf
 *.log
 *.out
+/RFP
+/Students
