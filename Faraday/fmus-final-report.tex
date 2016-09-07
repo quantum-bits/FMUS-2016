@@ -1,0 +1,279 @@
+\documentclass{article}
+
+\usepackage[margin=1.5in]{geometry}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+
+\title{Taylor University\\
+  Faculty Mentored Undergraduate\\
+  Summer Scholarship Program\\
+  Final Report}
+
+\author{Tom Nurkkala and Ken Kiers}
+
+\begin{document}
+
+\maketitle
+
+% From Sue Gavin --
+% Faculty & Student reports need to include:
+% What the objectives were
+% How you approached / accomplished those objectives
+% Next steps
+% How the FMUS impacted your future plans
+% Any other information you think is relevant to your work.
+
+\section{Participants}
+\label{sec:participants}
+
+The co-principal investigators on the project were:
+\begin{itemize}
+\item Dr.\ Tom Nurkkala\\
+  Associate Professor, Computer Science and Engineering\\
+  \texttt{tnurkkala@cse.taylor.edu}
+\item Dr.\ Ken Kiers\\
+  Professor and Chair, Physics and Engineering\\
+  \texttt{knkiers@taylor.edu}
+\end{itemize}
+Students involved in the project were:
+\begin{itemize}
+\item Keith Bauson, Computer Science, 2017
+\item Abram Stamper, Computer Science, 2016
+\end{itemize}
+
+\section{Objectives}
+\label{sec:objectives}
+
+Our principal objective for this project was
+to inaugurate long-term research and development
+into the design, construction, and empirical evaluation
+of a next-generation Learning Management System (LMS).
+
+Current and emerging LMS's
+suffer two key limitations.
+First, little actionable information,
+and second, emphasis on massive scalability
+at the expense of
+personalized student-teacher engagement.
+Our project aimed to begin work to
+design and construct
+learning management software
+that
+(1)~\emph{provides actionable educational intelligence}
+to support continuous, measurable improvements
+in teacher productivity and student outcomes, and
+(2)~\emph{personalizes the  teacher-student relationship}
+into a modern apprenticeship model that
+encourages mastery learning without sacrificing scalability.
+
+Specifically, our proposed objectives
+were as follows.
+\begin{enumerate}
+\item \textbf{Identify}
+  important and compelling features of
+  a next-generation LMS.
+\item \textbf{Architect}
+  a software architecture
+  that provides a long-term platform
+  on which to develop the new LMS.
+\item \textbf{Build}
+  and test features for the LMS.
+\item \textbf{Deploy}
+  completed features
+  on Taylor servers
+  for use in select fall classes.
+\item \textbf{Involve}
+  students in all aspects of the project.
+\item \textbf{Mentor}
+  students personally, professionally,
+  and academically.
+\item \textbf{Fund}
+  ongoing learning management R\&D and student mentoring;
+  collaborate with the Taylor Office of Sponsored Program
+  to this end.
+\end{enumerate}
+
+\section{Results}
+\label{sec:results}
+
+Referring to the objectives enumerated in Section~\ref{sec:objectives},
+we achieved the following results.
+
+\subsection{Identify}
+\label{sec:identify}
+
+We already had a robust list set of features
+based on past brainstorming.
+Many of these features were suggested in our project proposal.
+
+Our focus during this initial round of R\&D
+was to create an ``MVP'' or \emph{minimum viable product}.
+The goal of an MVP is to create a system
+that has sufficient capability
+to provide a meaningful set of services
+to its end users (for us, students and teachers).
+We judged that our MVP
+must allow users to:
+\begin{enumerate}
+\item Schedule courses
+\item Assign instructors to courses
+\item Permit students to ``enroll'' in courses (in the system)
+\item Allow students to register class attendance
+\item Project content on the classroom projector
+\item Evaluate student understanding using mobile devices
+\item Support out-of-class assignments
+\item Provide feedback on student work
+\end{enumerate}
+
+\subsection{Architect}
+
+We devoted considerable effort
+to an architecture that we anticipate
+will support long-term R\&D in this area.
+We:
+\begin{enumerate}
+\item Researched, identified, and selected
+  leading-edge \emph{software, tools, and standards} for:
+  \begin{enumerate}
+  \item Web user interface
+  \item Mobile user interface
+  \item RESTful web services
+  \item Secure access (authorization and authentication)
+  \item Relational database management
+  \end{enumerate}
+  In all these architectural choices,
+  we emphasized software and tools we judged to be
+  robust, secure, scalable, and performant.
+\item Devoted considerable attention, discussion, and revision
+  to the \emph{relational data model} that we created
+  to support the data persistence requirements
+  of our LMS.
+\item Designed a \emph{web services interface}
+  that supports both web-based and mobile
+  user software.
+  Using state-of-the-art techniques for web services,
+  this approach will allow us to provide access
+  to the LMS from a wide variety of devices.
+\end{enumerate}
+
+\subsection{Build}
+
+Of the MVP features listed in Section~\ref{sec:identify},
+we either completed or made significant progress
+on the first six.
+Students were involved in all phases
+of the software development life cycle.
+
+To ensure the resulting software was robust,
+we placed significant emphasis on
+both unit testing and end-to-end testing.
+Our tests cover nearly 100\% of the server software
+and a large portion of the web interface.
+
+\subsection{Deploy}
+
+From the first day of the project,
+we emphasized continuous delivery
+of the LMS software as it was developed.
+In that sense,
+we achieved our deployment goal.
+
+However,
+because we did not complete all the MVP features
+(Section~\ref{sec:identify}),
+we did not reach the point at which
+it made sense to deploy to Taylor servers.
+Unfortunately,
+this also means that we were not able to
+deploy the software for trail use in the classroom
+during the fall semester.
+
+Consistent with our desire to make the software
+available to others at no charge,
+we have created a publicly-accessible software repository
+containing the complete source code
+for the system.
+Code-named \emph{Faraday} after nineteenth-century
+scientist, engineer, teacher, and Christ-follower Michael Faraday,
+the system can be found at \url{https://github.com/faraday-effect/faraday}.
+
+\subsection{Involve}
+
+We worked directly with students
+each week day
+in the design, development, testing, and debugging
+of the LMS.
+Employng state-of-the-art
+``agile'' software development
+practices and principles,
+our project emphasized
+face-to-face communication,
+flexible planning,
+incremental development,
+and continuously deliverable software.
+We regularly employed ``pair programming''
+in which a professor and a student
+worked together on design, programming,
+debugging, and testing.
+
+\subsection{Mentor}
+
+We created an environment that was
+flexible, fun, and productive.
+The project gave students an opportunity to interact
+with us on a daily basis around
+learning management,
+software engineering,
+and software engineering management.
+The experience
+helped prepare students
+for future research and development work
+as computer scientists and software engineers.
+
+\subsection{Fund}
+
+Although we intend to revisit this objective,
+we were unable to research or secure
+additional funding for ongoing work on the project.
+
+\section{Future Work}
+
+One summer's work only scratched the surface of what's
+possible for the future of learning management.
+Near term work in this area should:
+\begin{enumerate}
+\item \textbf{Complete} the implementation of the MVP features
+  identified in Section~\ref{sec:identify}.
+\item \textbf{Deploy} the system for trial use in the classroom.
+\item \textbf{Study} the impact of new learning management
+  techniques and technologies in the classroom.
+\item \textbf{Refine} the system,
+  identifying the most promising new features
+  for implementation.
+\end{enumerate}
+Longer term plans should seek to:
+\begin{enumerate}
+\item \textbf{Collaborate}
+  across departments on campus
+  to explore the efficacy of the new learning management techniques
+  in diverse disciplines.
+\item \textbf{Disseminate} results
+  with the scholarly community
+  through publication of empirical results.
+\item \textbf{Share} the software itself
+  under a free and open-source software license that would
+  allow other institutions to install and employ the
+  system free of charge.
+\item \textbf{Inaugurate}
+  a global learning community around
+  continuous improvement of
+  teaching and learning
+  through the judicious and sustainable application
+  of actionable, personalized learning management technology.
+\end{enumerate}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

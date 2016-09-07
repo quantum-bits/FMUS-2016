@@ -1,8 +1,16 @@
-/auto
+# LaTeX
 *.aux
 *.toc
 *.pdf
 *.log
+*.dvi
+*.fdb_latexmk
+*.fls
 *.out
+
+# Emacs
+auto/
+
+# Non-shared data
 /RFP
 /Students
