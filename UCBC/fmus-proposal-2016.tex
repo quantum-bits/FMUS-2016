@@ -1,0 +1,390 @@
+\documentclass{article}
+
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage{booktabs}
+\usepackage{framed}
+
+\title{Taylor University\\
+  Faculty Mentored Undergraduate\\
+  Summer Scholarship Program\\
+  Faculty Application}
+
+\author{Ken Kiers and Tom Nurkkala}
+
+\newcommand{\igrad}{\texttt{iGrad}}
+\newcommand{\ichair}{\texttt{iChair}}
+\newcommand{\edbrite}{\texttt{EdBrite}}
+
+% Must accompany student applications.
+
+% Faculty Mentored Scholarship is defined as inquiry, investigation and creative
+% activity conducted by faculty and students together to make an original
+% intellectual or creative contribution to the discipline in ways commensurate
+% with the standards, methodologies and peer-review expectations of the field.
+
+% Award requirements:
+
+% 1. If awarded, a progress report from the faculty member is required.  Reports
+% will be provided to the Office of Sponsored Programs by August 31, 2016.
+
+% 2. Participation in summer enrichment activities is expected and encouraged.  A
+% schedule of activities will be made available during the spring semester.
+
+% 3. Allow time in schedule for students to attend the RCR discussion group as
+% well as summer scholarship lunches.
+
+% Completed applications are due in the Sponsored Programs Office on or before
+% February 1, 2016.  Decisions will be made by March 15, 2016.
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Participants}
+\label{sec:participants}
+
+The co-principal investigators on the project are:
+\begin{itemize}
+\item Dr.\ Ken Kiers\\
+  Professor and Chair, Physics and Engineering\\
+  \texttt{knkiers@taylor.edu}
+\item Dr.\ Tom Nurkkala\\
+  Associate Professor, Computer Science and Engineering\\
+  \texttt{tnurkkala@cse.taylor.edu}
+\end{itemize}
+
+Students involved in the project are:
+  \begin{itemize}
+  \item TBD
+  \item TBD
+  \end{itemize}
+
+% Please type or print clearly your answer to each of the questions
+% below. Answers may be provided on a separate sheet: if so, please retype the
+% questions on the attached sheets.
+
+\section{Proposed Project}
+\label{sec:proposed-project}
+
+% Please describe your proposed project.
+
+This section provides project background information
+and proposed project activities.
+We also reflect on the project's relevance
+to the Boyer model of scholarship.
+
+\subsection{Background}
+\label{sec:background}
+
+Universit\'e Chr\'etienne Bilingue du Congo (UCBC)
+is a fledgling Christian university located in Beni, Congo.
+UCBC faces significant challenges in information technology (IT)---specifically
+lack of support for a computerized
+student information system (SIS) or
+learning management system (LMS).\footnote{For reference,
+  Taylor's SIS is \emph{Banner}
+  and its LMSs are \emph{Blackboard} and \emph{Moodle}.}
+
+Staff from UCBC first contacted Taylor several years ago to learn
+whether the Taylor Center for Missions Computing (CMC) could help
+address their IT needs.  During a visit to Taylor's campus in fall
+2015, UCBC representatives learned about \ichair{} and \igrad{}, two
+software packages developed by KK, TN, and several students at Taylor.
+
+\igrad{} is a web-based application that can be used by undergraduate
+students to develop four-year plans and conduct graduation audits on
+those plans to ensure that graduation requirements will be met.  The
+application was developed approximately three years ago by TU faculty
+and students and is used extensively in the Physics and Engineering
+Department as an advising tool.  The functionality of \igrad{} is
+similar to that provided by DegreeWorks.
+
+\ichair{} is a web-based application that aids department chairs in
+the planning and visualization of faculty schedules and loads.  This
+package was developed by KK, with significant help from TN.  Several
+departments at Taylor currently use \ichair{} as a planning tool.
+
+We conducted several follow-up conversations
+with UCBC staff in Congo,
+including a demonstration
+of \igrad{} and \ichair{}
+by video conference.
+As we learned more about UCBC's current infrastructure,
+it became clear that UCBC's needs
+were even more basic than what \igrad{} and \ichair{} provided.
+For example, UCBC currently operates
+without computerized support
+(beyond simple spreadsheets) for
+admissions, student grades, transcripts,
+or even rudimentary human resources needs.\footnote{In a conversation with UCBC
+  several years ago, they reported that their biggest record-keeping challenge
+  was that rats tended to eat the paper records. They were not joking.}
+
+Recognizing that the functions of \igrad{} and \ichair{}
+were not the most critical to UCBC's infrastructure,
+we began to search for other software solutions
+that might better help satisfy UCBC's immediate requirements.
+Through a reference from the Dr.\ Andrew Sears, president
+of City Vision University,\footnote{\url{http://www.cityvision.edu/}}
+we contacted Dr.\ Walker Tzeng,
+executive director of
+the  World Evangelical Theological Institute Association
+(WETIA).\footnote{\url{http://wetia.org/}}
+WETIA and its partners have created \edbrite,
+a cloud-based web application described as
+\begin{quote}
+  an integrated Learning Management System (LMS)
+  and Student Information System (SIS) platform
+  for small and medium-sized colleges, universities, schools, seminaries,
+  churches, ministries, non-profits, organizations,
+  and individual teachers.\footnote{\url{http://www.edbrite.com/}}
+\end{quote}
+Among other features, \edbrite{} supports
+enrollment management,
+registration,
+syllabi,
+announcements,
+quizzes,
+homework,
+discussions,
+reporting,
+and grading.
+In short,
+\edbrite{} provides many of
+the SIS and LMS capabilities
+most needed by UCBC.
+
+\subsection{Activities}
+\label{sec:activities}
+
+The proposed project centers on two activities:
+on-site deployment in Africa,
+and extending \edbrite{} with degree planning and auditing features.
+
+\subsection{On-Site Deployment in Africa}
+\label{sec:on-site-deployment}
+
+The \edbrite{} system is currently available only as a cloud-based web application.
+While unremarkable for \edbrite's existing users,
+its ``on-line only'' nature is problematic for UCBC.
+Facing regular outages of electric power,
+compounded by slow and intermittent
+Internet connectivity in Congo,
+UCBC is reluctant to rely on mission-critical software
+available only via the Internet.
+
+In partnership with \edbrite's developer,
+we propose to package \edbrite{} 
+for deployment in Africa
+by leveraging the latest software container technology.\footnote{\url{https://www.docker.com/}}
+Packaged in this way,
+\edbrite{} can be made available
+on UCBC's internal network in Congo,
+where the software will be installed, maintained, and updated
+by UCBC's local IT staff.
+Running on their local network eliminates UCBC's reliance on Internet availability
+in order to operate the software.
+In addition, UCBC has local electrical generation capacity,
+which will maintain access to the software
+regardless of the state of the power grid.
+
+\subsection{Degree Planning and Auditing Feature}
+\label{sec:planning-auditing}
+
+... Re-implementing \igrad{} inside \edbrite{}.
+
+
+\subsection{Scholarship}
+\label{sec:scholarship}
+
+\emph{TODO---TODO---TODO---TODO}
+\begin{enumerate}
+\item Boyer model stuff
+\item Emphasize novel issues: alternative scheduling with no fixed academic
+  calendar, re-deployment of cloud-based application to local server
+  environment using container technology
+\end{enumerate}
+
+\begin{framed}
+  \textbf{From Bill's E-mail}
+
+  The NSF document lists Research, Applied Research, and Development.
+  I believe what you propose can be stated so as to fit in the Development definition.
+  I also assume that this could qualify for our scholarship area of application based on Boyer.
+  ``Development is the systematic use of the knowledge or understanding
+  gained from research
+  directed toward the production of useful materials, devices, or methods,
+  including the design and development of prototypes and processes.''
+
+  Students can be viewed as doing ``research'' into issues and solutions
+  for such problems in general and
+  if they emphasize development of a process/prototype of use in other areas
+  (including cultural, technological access and ability, etc.),
+  the project could fit a TU compatible definition of scholarship.
+  I believe Jeff will accept this concept of scholarship
+  that is broader than traditional scientific research.
+  Including concepts such as \emph{refactoring}, \emph{loose coupling with tight cohesion} might be useful.
+  Fancy buzzwords shouldn't hurt!
+
+  As you said when we talked, this project would apply knowledge to ``consequential
+  problems'' that fit with the University mission and hold the promise of being
+  generalizable.
+\end{framed}
+
+
+\section{Expertise and Scholarly Plans}
+\label{sec:expertise-plans}
+
+% Please describe your general areas of expertise
+% and how the proposed project fits
+% into your overall scholarship plans.
+
+TN is the founding director of the
+Taylor Center for Missions Computing,
+which is dedicated to helping meet the computing needs
+of Christian missions around the globe.
+He has extensive background as a software engineer
+and software engineering manager
+in industry and the academy.
+He has supervised numerous student software projects
+for missions partners including
+Operation Mobilization (England, Hong Kong),
+Wycliffe/SIL (Thailand),
+Global Recordings Network (Australia),
+and
+Tiny Hands International (Nepal).
+TN's scholarly focus is on the design and development
+of software tools and computational infrastructure
+that enhances student engagement
+and facilitates faculty-student mentoring
+by providing actionable insight
+into student behavior and academic performance.
+
+KK is a theoretical physicist by training but has a certain amount
+of background as a computer programmer.  He has developed much of
+the code base for \igrad{} and \ichair{} over the past 3-1/2 years
+as a response to perceived needs within his department.  KK's
+background as a department chair gives him a perspective that would
+be useful to \edbrite and to the project as a whole.  KK's main
+scholarship emphasis will likely continue to be in theoretical
+particle physics, but he has a strong interest in making the
+functionality of \igrad{} and \ichair{} more widely available to
+users beyond Taylor.
+
+\section{Student Involvement}
+\label{sec:student-involvement}
+
+% Please describe the project in which the student will be involved.
+
+% To the extent possible, describe what you anticipate will be the student’s
+% responsibilities and activities contributing to the completion of this
+% project as well as professional venues available for students to present
+% their work.
+
+\section{Student Interaction}
+\label{sec:student-interaction}
+
+% Please describe how you personally plan to interact with the students.
+
+% Please note:
+
+% (1) Mentors will be available on campus and/or at the same field site for a
+% minimum of four hours/day for 80\% of the project days.  On those days when the
+% faculty mentor is not physically on-site, he/she will arrange supervisory
+% coverage with another faculty member. Covering faculty will know where students
+% are supposed to be and what they are supposed to be doing. Students must have
+% phone access to their mentor and/or coverage supervisor.  Mentors must train
+% students on or allow time for students to complete university training for
+% Responsible Conduct of Research, laboratory orientation, other pertinent safety
+% protocols including chemical hygiene, and provide campus safety contact info.
+
+% (2) FMUSS faculty are expected to plan a program for all summer students to
+% provide opportunities for scholarly updates, special speakers and/or field
+% trips.
+
+\section{Resources Available}
+\label{sec:resources-available}
+
+% Please list grant or other resources available to support this work (indicate
+% sources and amount).
+
+% Include Women’s Giving Circle, SRTP, or external funding.  Do you have other
+% funds to support your summer salary?  Are you requesting a summer stipend
+% from the Provost’s Fund?
+
+We hope that faculty salaries will be supplemented
+by funds available from
+(i) an ``indirect costs'' account associated with KK's research
+and/or
+(ii) the Taylor Center for Missions Computing.
+
+TN has had a preliminary discussion with a donor
+who may be willing to fund students who are
+participating in a missions computing project
+such as this.
+
+\section{Project Expenses}
+\label{sec:project-expenses}
+
+% Please list anticipated project expenses and how resources will be allocated
+% to cover expenses.
+
+% A small supplies grant (\$300 - \$500) may be awarded with each FMUSS program
+% award.
+
+We request the full stipend amount available for
+two faculty members
+and two students, as follows.
+
+\begin{center}
+  \begin{tabular}{rlrr} \toprule
+    Qty & Description    & Unit    & Total    \\ \midrule
+    2   & Faculty salary & \$3,200 & \$6,400  \\
+    2   & Student salary & 3,200   & 6,400    \\ \midrule
+        & Total          &         & \$12,800 \\ \bottomrule
+  \end{tabular}
+\end{center}
+
+No additional funds would be required for other expenses.
+% {\bf (Tom: Would we need to include funds for field trips, speakers, scholarly updates, etc.?)}
+
+\section{Facilities and Equipment}
+\label{sec:facilities-equipment}
+
+% Please list any rooms, labs, or major instruments that will be required
+% during the course of this project.
+
+The project participants will work in
+the Center for Missions Computing lab (Euler~040),
+the Computer Science and Engineering lab (Euler~217), and
+faculty offices.
+The project will not require the use of major instruments
+(other than existing computers).
+
+\section{Back-up Supervision}
+\label{sec:back-up-supervision}
+
+% Please list college employees that will be requested as supervisors during
+% any leaves of absence.
+
+Faculty members plan to coordinate absences
+so that one of them will be present with students if the other is absent.
+If both faculty members are absent,
+back-up supervision will be provided by
+Mr.\ Nate White,
+Dr.\ Stefan Brandle, or
+Dr.\ Jonathan Geisler
+in regular consultation with the faculty members.
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+
+%  LocalWords:  TBD Universit Chr etienne Bilingue du UCBC Beni LMS LMSs KK
+%  LocalWords:  DegreeWorks UCBC's Tzeng WETIA TODO generalizable TN's KK's
+%  LocalWords:  rlrr
