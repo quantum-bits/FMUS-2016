@@ -1,3 +1,4 @@
-# fmus-proposal-lms
+# FMUS 2016
 
-Learning Management 2.0
+* Faraday
+* UCBC
